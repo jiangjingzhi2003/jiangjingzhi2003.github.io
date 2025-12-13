@@ -1,16 +1,291 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jim Jiang's Personal website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jingzhi Jiang</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Introduction</h1>
-    <h1>Projects</h1>
+  <div class="page-wrapper">
+
+    <h1 class="page-title">
+      Jingzhi Jiang <span class="sub">蒋静之</span>
+    </h1>
+
+    <div class="layout">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="avatar-wrapper">
+          <img src="image/selfie.jpeg" alt="Your Photo" class="avatar">
+        </div>
+
+        <h2 class="name">Jingzhi Jiang</h2>
+        <div class="role">B.A. Computer Science @ UC Berkeley</div>
+        <div class="role">Computer Security Researcher</div>
+
+        <ul class="sidebar-list">
+          <li>📍 Berkeley, CA</li>
+          <li>📞 (503) 431-0379</li>
+          <li>✉️ <a href="mailto:jiangjingzhi@berkeley.edu">jiangjingzhi@berkeley.edu</a></li>
+          <li>🔗 <a href="https://linkedin.com/in/jingzhi-jiang2003">LinkedIn</a></li>
+          <li>💻 <a href="https://github.com/jiangjingzhi2003">GitHub</a></li>
+          <li>📄 <a href="files/Jingzhi's Research Resume.pdf">Résumé</a></li>
+          <li>📂 <a href="projects/index.html">Project list</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <h2>Biography</h2>
+
+        <p>
+          Hi! I am a Computer Science student at <a href="https://eecs.berkeley.edu/">UC Berkeley</a> (Class of 2026) with a 4.0 GPA.
+          I focus on AI for security and work closely with <a href="https://people.eecs.berkeley.edu/~daw">Prof. David Wagner</a> and
+          <a href="https://people.eecs.berkeley.edu/~dawnsong/">Prof. Dawn Song</a> on autonomous agent benchmarking, large-scale fuzzing,
+          and real-time threat detection.
+        </p>
+        <p>
+          Outside of security, I working with <a href="https://ourenvironment.berkeley.edu/people/carl-boettiger">Prof.Carl Bottiger</a> in the Eric &amp; Wendy Schmidt Center on reinforcement learning for environmental decision-making,
+        </p>
+
+        <section class="section">
+          <h2>Research Experience</h2>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>David Wagner Research Group</h3>
+                <p class="item-role">Computer Security Researcher · Berkeley, CA</p>
+              </div>
+              <span class="item-date">Jan 2025 &ndash; Present</span>
+            </div>
+            <ul class="item-points">
+              <li>Automated fuzz corpus collection with LLM to uncover vulnerabilities across OSS projects.</li>
+              <li>Authored Scrapy + Search API tooling to locate seed files with diverse characteristics.</li>
+              <li>Containerized OSS-Fuzz, LibFuzzer, and Magma benchmark pipelines for multi-corpus experimentation.</li>
+              <li>Co-authored the <em>SeedAIchemy</em> paper for the 2025 LLM4Sec Workshop at ICDM.</li>
+              <li>Generated LLM-based log rules that flag malicious host activity in real time.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>Dawn Song Research Group</h3>
+                <p class="item-role">Computer Security Researcher · Berkeley, CA</p>
+              </div>
+              <span class="item-date">Oct 2025 &ndash; Present</span>
+            </div>
+            <ul class="item-points">
+              <li>Lead developer for <em>e2e-cyber-bench</em>, a 1,500+ instance benchmark for evaluating AI agents on real-world vulnerability analysis tasks.</li>
+              <li>Integrated historical CVEs from 188 large projects and automated reproducible setups for each target.</li>
+              <li>Built fuzzing and unit-test harnesses that evaluate whether agents successfully patch vulnerabilities.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>Eric &amp; Wendy Schmidt Center for Data Science &amp; Environment</h3>
+                <p class="item-role">Machine Learning Researcher · Berkeley, CA</p>
+              </div>
+              <span class="item-date">Apr 2024 &ndash; Present</span>
+            </div>
+            <ul class="item-points">
+              <li>Determined optimal green crab mitigation strategies with RecurrentPPO and other deep RL approaches.</li>
+              <li>Fine-tuned agents and executed Optuna-based hyperparameter searches.</li>
+              <li>Built Gymnasium simulations to visualize population dynamics over time.</li>
+              <li>Crafted training environments with varied observations and randomness to improve robustness.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2>Working Experience</h2>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>KPMG</h3>
+                <p class="item-role">Software Development Intern · Shanghai, China</p>
+              </div>
+              <span class="item-date">2024</span>
+            </div>
+            <ul class="item-points">
+              <li>Implemented a Python + MongoDB storage backend to accelerate metadata queries for the patch intelligence platform.</li>
+              <li>Developed a PDF-to-text prototype with image extraction to improve downstream document ingestion accuracy.</li>
+              <li>Completed a graphRAG workflow powered by Qwen, Microsoft graphRAG, and LM Studio for contextual retrieval.</li>
+              <li>Benchmarked Text-to-SQL models on private datasets using Hugging Face and LlamaIndex.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>Floras &amp; Berkeley SkyDeck</h3>
+                <p class="item-role">Full Stack Software Development Intern · Berkeley, CA</p>
+              </div>
+              <span class="item-date">2023</span>
+            </div>
+            <ul class="item-points">
+              <li>Designed a catalog site surfacing 200+ sustainable projects with advanced search and filtering tools.</li>
+              <li>Built Flask APIs, reusable components, and responsive layouts using HTML, CSS, and JavaScript.</li>
+              <li>Supported product demos for the SkyDeck accelerator showcase.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2>Publications</h2>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3><a href="https://arxiv.org/abs/2511.12448" target="_blank" rel="noopener">SeedAIchemy: LLM-Driven Seed Corpus Generation for Fuzzing</a></h3>
+                <p class="item-role">Aidan W., Norah A., Jingzhi J., Andrew J., Karen S., Andy Z., Basel A., David W.</p>
+              </div>
+              <span class="item-date">LLM4Sec Workshop @ ICDM 2025</span>
+            </div>
+            <ul class="item-points">
+              <li>Demonstrated how LLMs synthesize high-quality seed corpora that boost fuzzing code coverage and exploit discovery.</li>
+              <li>Benchmarked across OSS-Fuzz targets and released evaluation tooling for the community.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2>Teaching Experience</h2>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>UC Berkeley CSM</h3>
+                <p class="item-role">CS61C Mentor · Berkeley, CA</p>
+              </div>
+              <span class="item-date">Jan 2024 &ndash; May 2024</span>
+            </div>
+            <ul class="item-points">
+              <li>Ran weekly small-group sessions covering RISC-V, C, CPU design, and cache behavior.</li>
+              <li>Prepared walkthroughs and practice problems that raised cohort midterm averages.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>UC Berkeley EECS</h3>
+                <p class="item-role">CS61B Academic Intern · Berkeley, CA</p>
+              </div>
+              <span class="item-date">Aug 2024 &ndash; Dec 2024</span>
+            </div>
+            <ul class="item-points">
+              <li>Supported weekly teaching sections and helped 100+ students to reinforce core data-structure concepts.</li>
+              <li>Triaged lab queues, debugged Java code, and curated study notes for upcoming exams.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section projects-grid">
+          <h2>Highlighted Projects</h2>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3><a href="https://github.com/jiangjingzhi2003/webBot" target="_blank" rel="noopener">WebBot</a></h3>
+                <p class="item-role">Chrome Extension · Python &amp; JavaScript</p>
+              </div>
+              <span class="item-date">Dec 2024 &ndash; Feb 2025</span>
+            </div>
+            <p class="item-desc">
+              Chrome extension that pipes any page through Azure-hosted LLM + RAG pipelines, shipped with Flask APIs and a React UI.
+            </p>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3><a href="https://jiangjingzhi2003.github.io/cs180/index.html" target="_blank" rel="noopener">Computer Vision Projects</a></h3>
+                <p class="item-role">CS180 Portfolio · Panoramas · NeRF · Diffusion</p>
+              </div>
+              <span class="item-date">2025</span>
+            </div>
+            <p class="item-desc">
+              A suite of CS180 projects: panorama building, NeRF reconstruction, and diffusion-model training, all documented in the linked portfolio.
+            </p>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>e2e-cyber-bench</h3>
+                <p class="item-role">Cybersecurity Agent Benchmark</p>
+              </div>
+              <span class="item-date">2025</span>
+            </div>
+            <p class="item-desc">
+              1,500+ CVE-derived evaluation tasks with reproducible scripts for benchmarking autonomous security agents.
+            </p>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3><a href="https://github.com/wagner-group/seedaichemy" target="_blank" rel="noopener">SeedAIchemy</a></h3>
+                <p class="item-role">LLM-Driven Fuzzing</p>
+              </div>
+              <span class="item-date">2025</span>
+            </div>
+            <p class="item-desc">
+              LLM-powered corpus generator that boosts fuzzing; a LLM4Sec workshop paper.
+            </p>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3>CodaBot</h3>
+                <p class="item-role">Team of 2 · Go</p>
+              </div>
+              <span class="item-date">Sep 2024 &ndash; Nov 2024</span>
+            </div>
+            <p class="item-desc">
+              Secure Go-based file sharing with HMAC, RSA, AES-CTR, and constant-bandwidth append algorithms.
+            </p>
+          </article>
+          <article class="item">
+            <div class="item-header">
+              <div>
+                <h3><a href="https://github.com/boettiger-lab/rl4greencrab/tree/main" target="_blank" rel="noopener">RL4GreenCrab</a></h3>
+                <p class="item-role">Deep RL for Green Crab Population Control</p>
+              </div>
+              <span class="item-date">2024 &ndash; Present</span>
+            </div>
+            <p class="item-desc">
+              DRL agents, Gymnasium environments, and Optuna tuning scripts for sustainable green crab invasion control.
+            </p>
+          </article>
+          <p class="projects-cta">
+            <a href="projects/index.html">detailed project list</a>.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Skills</h2>
+          <ul class="skill-list">
+            <li>Python (NumPy, pandas)</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>Go</li>
+            <li>SQL / MySQL</li>
+            <li>RISC-V</li>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Docker</li>
+            <li>Firebase</li>
+            <li>MongoDB</li>
+            <li>Hugging Face</li>
+            <li>LlamaIndex</li>
+            <li>LangChain</li>
+            <li>PyTorch</li>
+            <li>Scikit-learn</li>
+            <li>Azure</li>
+            <li>Linux</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 </html>

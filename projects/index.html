@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Jingzhi Jiang</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="project_style.css">
+</head>
+<body>
+  <div class="projects-page">
+    <div class="projects-nav">
+      <a href="../index.html">← Back to Main Page</a>
+      <span>Jingzhi Jiang</span>
+    </div>
+    <h1>Projects</h1>
+    <p class="subtitle">A deeper dive into the security, ML, and systems work I have shipped recently.</p>
+
+    <article class="project-article">
+      <h2><a href="https://github.com/jiangjingzhi2003/webBot" target="_blank" rel="noopener">WebBot</a></h2>
+      <div class="project-meta">Chrome Extension · Python, Flask, React, Azure OpenAI · Dec 2024 – Feb 2025</div>
+      <div class="project-links">
+        <a href="https://github.com/jiangjingzhi2003/webBot" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+      <ul>
+        <li>Ships an in-browser AI chatbot that summarizes visited pages, answers questions, and quotes sources.</li>
+        <li>Backed by a Flask inference API that orchestrates Azure OpenAI models, embeddings, and RAG flows.</li>
+        <li>Adds automatic CAPTCHA detection/solving with Azure Computer Vision and deploys via Chrome Web Store tooling.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2><a href="https://jiangjingzhi2003.github.io/cs180/proj4/index.html" target="_blank" rel="noopener">NeRF from Scratch</a></h2>
+      <div class="project-meta">CS180 Project 4 · PyTorch, NeRF, Rendering · 2025</div>
+      <ul>
+        <li>Implemented positional encodings, hierarchical sampling, and volumetric rendering per the UC Berkeley CS180 brief.</li>
+        <li>Reconstructed novel 3D views from sparse multi-view captures, tuning with gradient clipping and LR warmups.</li>
+        <li>Authored a comprehensive report comparing against baseline NeRF outputs and documenting experiments.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2>e2e-cyber-bench</h2>
+      <div class="project-meta">Security Agent Benchmark · 1,507 Tasks · 2025</div>
+      <ul>
+        <li>Curated a suite of historical CVEs linked to reproducible build/test scripts for automated evaluation.</li>
+        <li>Designed scoring harnesses for tasks spanning static analysis, exploit development, and patch validation.</li>
+        <li>Adopted across our research groups to compare LLM-based fuzzing and remediation agents.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2><a href="https://github.com/wagner-group/seedaichemy" target="_blank" rel="noopener">SeedAIchemy</a></h2>
+      <div class="project-meta">LLM-Driven Fuzzing Seeds · 2025 · Published at LLM4Sec Workshop</div>
+      <div class="project-links">
+        <a href="https://github.com/wagner-group/seedaichemy" target="_blank" rel="noopener">GitHub Repo</a>
+        <a href="https://arxiv.org/abs/2511.12448" target="_blank" rel="noopener">ArXiv Paper</a>
+      </div>
+      <ul>
+        <li>Automates seed-corpus creation with LLM reasoning to increase fuzzing across OSS-Fuzz projects.</li>
+        <li>Containerized OSS-Fuzz, LibFuzzer, and Magma benchmark pipelines for multi-corpus experimentation.</li>
+        <li>Open-sourced with configuration recipes so other labs can reproduce the workshop results.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2>CodaBot</h2>
+      <div class="project-meta">Secure File Sharing · Go, AES-CTR, RSA · Team of 2 · Sep 2024 – Nov 2024</div>
+      <ul>
+        <li>Designed a threat-model aware storage layer with HMAC, hashing, and RSA key wrapping for user sharing.</li>
+        <li>Engineered constant-bandwidth append operations that maintain confidentiality even under active attackers.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2><a href="https://github.com/boettiger-lab/rl4greencrab/tree/main" target="_blank" rel="noopener">RL4GreenCrab</a></h2>
+      <div class="project-meta">Deep RL for Green Crab Mitigation · RecurrentPPO, Gymnasium · 2024</div>
+      <div class="project-links">
+        <a href="https://github.com/boettiger-lab/rl4greencrab/tree/main" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+      <ul>
+        <li>Extended the open-source codebase with custom Gymnasium environments, Optuna tuning scripts, and dashboards.</li>
+        <li>Demonstrated sustainable harvesting policies using RecurrentPPO, including robustness checks with noisy observations.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2><a href="https://jiangjingzhi2003.github.io/cs180/proj5/index.html" target="_blank" rel="noopener">Fun With Diffusion Models</a></h2>
+      <div class="project-meta">Flow Matching U-Net · MNIST · 2024</div>
+      <ul>
+        <li>Implemented a diffusion-style flow-matching model with time and class conditioning in a custom U-Net.</li>
+        <li>Trained on MNIST digits to generate class-controlled samples from pure noise.</li>
+        <li>Evaluated generation quality with FID and ablations on conditioning strategies.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2>Post</h2>
+      <div class="project-meta">Reddit-like Social Platform · React, Node.js, Firebase · Team of 4 · Dec 2023</div>
+      <ul>
+        <li>Implemented authentication, post creation, and sharing feeds with Firebase Auth/Firestore.</li>
+        <li>Led front-end architecture, responsive styling, and CI deployment for classroom showcase.</li>
+      </ul>
+    </article>
+
+    <article class="project-article">
+      <h2>Build Your Own World (BYOW)</h2>
+      <div class="project-meta">2D Maze Exploration Game · Java · Team of 2 · Apr 2023 – May 2023</div>
+      <ul>
+        <li>Developed procedurally-generated tile worlds using DFS-based maze construction and OOP design patterns.</li>
+        <li>Shipped avatar controls, theming, and save/load functionality for repeatable gameplay sessions.</li>
+      </ul>
+    </article>
+  </div>
+</body>
+</html>
